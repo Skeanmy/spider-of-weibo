@@ -19,12 +19,12 @@ const topicName = "莫雷";
   // await new mweiboLogin(userName, passWord).init();
   await new weiboLogin(userName, passWord).init();
   try {
-    //   let mid = '4427710178645487';
-    //   // 爬取特定微博的转发
-    //   let url = `https://weibo.com/aj/v6/mblog/info/big?ajwvr=6&id=${mid}&__rnd=${Date.now()}`;
-    //   let allPage = await getRepostPages(url);
-    //   console.log('allCnt:', allPage);
-    //   handleRepost(url, allPage, mid);
+    // 爬取特定微博的转发
+    let mid = '4427710178645487';
+    let url = `https://weibo.com/aj/v6/mblog/info/big?ajwvr=6&id=${mid}&__rnd=${Date.now()}`;
+    let allPage = await getRepostPages(url);
+    console.log('allCnt:', allPage);
+    handleRepost(url, allPage, mid);
 
     // 爬取特定主题下的原始微博
     for (let i = 1; i <= 50; i++) {

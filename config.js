@@ -10,8 +10,8 @@ const  REDIS_CONF = {
 };
 
 const loginInfo = {
-  userName: '17792611892',
-  passWord: 'XMYRZkn123'
+  userName: 'your username',
+  passWord: 'your password'
 };
 
 module.exports = {
